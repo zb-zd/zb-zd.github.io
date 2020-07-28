@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<style>
+  /* 覆盖默认样式 */
+  .nav>li>a:focus, .nav>li>a:hover{
+    background: none;
+    color: #337ab7;
+  }
+
+  /*  */
+  body{
+    background-color: antiquewhite;
+    height: 1200px;
+  }
+  nav{
+    background-color: #fff;
+    height: 100px;
+  }
+  .navbar-nav{
+    width: 100%;
+  }
+  .navbar-nav li{
+    width: 14.2%;
+    text-align: center;
+  }
+  .nav>li>a{
+    color: #000;
+    padding-top: 30px;
+  }
+  .navbar-nav li a p{
+    margin: 0;
+  }
+@media(max-width:767px){
+  nav{
+    height: 60px;
+  }
+  .han{
+    margin-top: -45px;
+  }
+  .han>span{
+    background-color: #7a7876;
+  }
+  .navbar-nav{
+    width: 99.5vw;
+    margin: 0 -15px;
+    background-color: #fff;
+  }
+  .navbar-nav li{
+    width: auto;
+  }
+  .navbar-nav>li>a{
+    padding: 10px 0;
+  }
+}
+</style>
+<body>
+  <nav class="navbar top">
+    <div class="navbar-header">
+      <a href="" class="visible-xs"><img src="./img/logo.png" height="60px" class="center-block" alt=""></a>
+      <button class="navbar-toggle han" data-toggle="collapse" data-target="#nav-top">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-top">
+      <ul class="nav navbar-nav">
+        <li><a href="">
+          <p>中式家具</p>
+          <p>Chinese furniture</p>
+        </a></li>
+        <li><a href="">
+          <p>中式服装</p>
+          <p>Chinese clothes</p>
+        </a></li>
+        <li><a href="">
+          <p>中式服装</p>
+          <p>Chinese clothes</p>
+        </a></li>
+        <li class="hidden-xs"><a href="" style="padding-top: 0;">
+          <img src="./img/logo.png" alt="">
+        </a></li>
+        <li><a href="">
+          <p>设计理念</p>
+          <p>Design concept</p>
+        </a></li>
+        <li><a href="">
+          <p>我们的工厂</p>
+          <p>Our factory</p>
+        </a></li>
+        <li><a href="">
+          <p>联系我们</p>
+          <p>Contact us</p>
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    hello world!!!
+  </div>
+</body>
+</html>

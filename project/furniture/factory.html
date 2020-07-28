@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<style>
+  .carousel-control.left,
+  .carousel-control.right {
+    background: none;
+  }
+
+  #jjBanner .lun .item {
+    overflow: hidden;
+  }
+
+  #jjBanner .lun .item img {
+    position: relative;
+    width: 100%;
+    min-width: 800px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  /* 导航栏 */
+  .navbar {
+    height: 100px;
+    background-color: #fff;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav li {
+    width: 14.28%;
+  }
+
+  .navbar-nav li a {
+    padding: 30px 0;
+    color: #000;
+  }
+
+  .navbar-nav li a p {
+    margin: 0;
+  }
+
+  .foot {
+    text-align: center;
+    border-top: 1px solid #7A7876;
+    padding: 20px 0;
+  }
+
+  .foot ul {
+    width: 400px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .foot ul li {
+    list-style: none;
+    margin: 0 20px;
+    float: left;
+  }
+
+  .foot ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+  .top{
+    margin-top: 30px;
+  }
+  .img img{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .content{
+    padding-bottom: 30px;
+  }
+  .content h4{
+    margin: 30px 0 20px;
+  }
+  .content p{
+    margin: 5px 0;
+    text-indent: 2em;
+  }
+  @media(max-width:767px) {
+    .navbar {
+      height: 60px;
+      position: relative;
+    }
+
+    .navbar-header {
+      width: 100%;
+    }
+
+    .jj-tu {
+      display: inline;
+      margin-left: 40%;
+    }
+
+    .jj-tu img {
+      height: 60px;
+    }
+
+    .navbar-header .navbar-toggle {
+      border: 1px solid #7a7876;
+    }
+
+    .navbar-header .icon-bar {
+      background-color: black;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      padding: 0 2px;
+      position: absolute;
+      margin-top: -2px;
+      z-index: 999;
+      background-color: #fff;
+    }
+
+    .navbar-nav li {
+      width: 100%;
+    }
+
+    .navbar {
+      margin: 0;
+    }
+
+    .gong{
+    margin: 0 10px;
+  }
+    .foot ul {
+      width: 350px;
+      height: 30px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .foot ul li {
+      list-style: none;
+      margin: 0 10px;
+      float: left;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-header">
+      <a href="" class="jj-tu hidden-lg hidden-md hidden-sm"><img src="./img/logo.png" alt=""></a>
+      <button class="navbar-toggle" data-toggle="collapse" data-target="#nav-jj">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-jj">
+      <ul class="nav navbar-nav">
+        <li><a href="./furniture.html"><p>中式家具</p><p>Chinese furniture</p></a></li>
+        <li><a href="./clothes.html"><p>中式服装</p><p>Chinese clothes</p></a></li>
+        <li><a href="./Art.html"><p>艺术品</p><p>work of Art</p></a></li>
+        <li class="hidden-xs"><a href="./index.html" style="padding: 0 0 20px;"><img src="./img/logo.png" alt=""></a></li>
+        <li><a href="./design.html"><p>设计理念</p><p>Design concept</p></a></li>
+        <li><a href="./factory.html"><p>我们的工厂</p><p>Our factory</p></a></li>
+        <li><a href="./contact.html"><p>联系我们</p><p>Contact us</p></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="banner">
+    <div id="jjBanner" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner lun">
+        <div class="item active">
+          <img src="./img/longbanner1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/longbanner2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/longbanner3.jpg" alt="">
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#jjBanner" data-slide-to="0" class="active"></li>
+        <li data-target="#jjBanner" data-slide-to="0"></li>
+        <li data-target="#jjBanner" data-slide-to="0"></li>
+      </ol>
+      <a class="left carousel-control" href="#jjBanner" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#jjBanner" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  <div class="container gong">
+    <div class="top">
+      <h4 class="text-center">家具工厂和手工作坊</h4>
+      <h4 class="text-center">Furniture factories and hand workshops</h4>
+    </div>
+    <div class="row img">
+        <img src="img/gong.png" alt="">
+    </div>
+    <div class="row content">
+      <h4>1.总体定位the Position of the Total</h4>
+      <p>整体家具全生态定制项目是由Arttaste冻死为波士顿居民倾力打造的一站式家居生活服务平台主要产品包括三大板块：中式家具、中式服装、中式软装。</p>
+      <p>The eclological customized project of whole household is a service platform of one -stop home life that Arttaste put enormous efforts to build for Boston which assembles the chinese furniture ,chinese clothes and chinese soft loding design.</p>
+      <h4>2、价值定位value orientation</h4>
+      <p>融合中美文化家具与东西方审美观念与一身的一站式家居生活服务平台，倡导品质生活、轻松拥有的价值服务理念。</p>
+      <p>A service platform of one -stop home life combines Chinese and American cultures with East-West aesthetic concept which advocate ideas of quality life and attainable service.</p>
+      <h4>3、品牌定位</h4>
+      <p>品质 生活 轻松 拥有</p>
+      <p>Quality Life Relaxed Possessions</p>
+    </div>
+  </div>
+
+  <div class="container foot">
+    <ul>
+      <li><a href="">合作入口</a></li>
+      <li><a href="">招聘信息</a></li>
+      <li><a href="">家具实体店</a></li>
+      <li><a href="">联系我们</a></li>
+    </ul>
+    <p>Arttest中式家具品牌@2016 Arttest Interior design Co.Ltd.Beijing,china</p>
+  </div>
+</body>
+
+</html>

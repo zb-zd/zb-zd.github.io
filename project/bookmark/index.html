@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1809149_jpm5q5iwb6.css">
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="video" id="video">
+    <video src="./video/bookmark-1.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+    <div class="zhe">
+      <nav class="navbar navbar-fixed-top navigation">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">
+            <h3><img src="./img/mainLogo.png" alt=""> BOOKMARK</h3>
+          </a>
+        <a href="" class="iconfont ios visible-xs" @click.prevent="change">&#xe638;</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden-xs hidden-sm"><a href="">PRICING</a></li>
+            <li class="hidden-xs hidden-sm"><a href="">LOG IN</a></li>
+            <li class="hidden-xs hidden-sm"><a href="" class="bth get" @click.prevent="">GET STARTED</a></li>
+            <li><a href="" class="iconfont change" @click.prevent="change">&#xe638;</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="title">
+          <div class="container .cnt">
+            <h1>The Premier Web Builder For Small Business</h1>
+            <div class="text">
+              <p>Create high-quality sites that reflect the personality of your business, without spending a fortune.<br /> No coding or design skills required.</p>
+            </div>
+            <button class="btn success">Get Started</button>
+            <span class="iconfont">&#xe770;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="topLogo">
+      <img src="" alt="">
+      <a href=""><img src="./img/mainLogo.png" alt=""></a>
+    </div>
+    <div class="list">
+      <ul class="nav">
+        <li><a href="">Ecommerce</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Buy Domain</a></li>
+        <li><a href="">Buy Email</a></li>
+        <li><a href="">Help Center</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">AI Website Builder</a></li>
+        <li><a href="">About Bookmark</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="./js/vue.js"></script>
+<script>
+  new Vue({
+    el: '#video',
+    data: {
+      flag: true,
+    },
+    methods: {
+      change() {
+        if (this.flag) {
+          $('.menu').css({
+            'right': '0px',
+            'transition': 'all .3s'
+          })
+          this.flag = false;
+        } else {
+          $('.menu').css({
+            'right': '-250px',
+            'transition': 'all .3s'
+          })
+          this.flag = true;
+        }
+      }
+    }
+  })
+</script>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>京东</title>
+  <link rel="stylesheet" href="css/jd2.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jd.js"></script>
+</head>
+<style>
+  #content .js-lb.fixed{
+    position: fixed;
+    top: 0;
+  }
+</style>
+<body>
+  <section id="shop">
+    <div class="top">
+      <div class="top-nav">
+        <ul class="top-nav-a">
+          <li style="float: left;"><a href="" style="width: 80px;"><img src="images/1.png" alt="" height="13"
+                style="vertical-align:middle;">京东首页</a></li>
+          <li style="float: left;">
+            <a href=""><img src="images/2.png" alt="" height="13" style="vertical-align:middle;"> 河北</a>
+            <div class="hide-nav xc">
+              <div class="hide-nav-top">
+                <ul>
+                  <li><a href="">北京</a></li>
+                  <li><a href="">上海</a></li>
+                  <li><a href="">天津</a></li>
+                  <li><a href="">重庆</a></li>
+                  <li><a href="">河北</a></li>
+                  <li><a href="">山西</a></li>
+                  <li><a href="">河南</a></li>
+                  <li><a href="">辽宁</a></li>
+                  <li><a href="">吉林</a></li>
+                  <li><a href="">黑龙江</a></li>
+                  <li><a href="">内蒙古</a></li>
+                  <li><a href="">江苏</a></li>
+                  <li><a href="">山东</a></li>
+                  <li><a href="">安徽</a></li>
+                  <li><a href="">浙江</a></li>
+                  <li><a href="">福建</a></li>
+                  <li><a href="">湖北</a></li>
+                  <li><a href="">湖南</a></li>
+                  <li><a href="">广东</a></li>
+                  <li><a href="">广西</a></li>
+                  <li><a href="">江西</a></li>
+                  <li><a href="">四川</a></li>
+                  <li><a href="">海南</a></li>
+                  <li><a href="">贵州</a></li>
+                  <li><a href="">云南</a></li>
+                  <li><a href="">西藏</a></li>
+                  <li><a href="">陕西</a></li>
+                  <li><a href="">甘肃</a></li>
+                  <li><a href="">青岛</a></li>
+                  <li><a href="">宁夏</a></li>
+                  <li><a href="">新疆</a></li>
+                  <li><a href="">港澳</a></li>
+                  <li><a href="">台湾</a></li>
+                  <li><a href="">钓鱼岛</a></li>
+                  <li><a href="">海外</a></li>
+                </ul>
+              </div>
+              <div class="hide-nav-middle">
+                <p>地区专享版本</p>
+                <ul>
+                  <li><span><a href="">中国港澳</a></span></li>
+                </ul>
+              </div>
+              <div class="hide-nav-bottom">
+                <p>Available Sites</p>
+                <ul>
+                  <li><a href="">Global Site</a></li>
+                  <li><a href="">Cant Site</a></li>
+                  <li><a href="">Situs Indonesia</a></li>
+                  <li><a href="">Situs de Site</a></li>
+                  <li><a href="">Situs de Indonesia</a></li>
+                </ul>
+              </div>
+            </div>
+          </li style="float: left;">
+        </ul>
+        <ul class="top-nav-b">
+          <li><a href="">你好,请登录 免费注册</a></li>
+          <li><a href="">我的订单</a></li>
+          <li class="wdjd">
+            <a href="">我的京东</a>
+            <div class="top-nav-wdjd xc">
+              <div class="nav-wdjd-top">
+                <ul>
+                  <li><a href="">待处理订单</a></li>
+                  <li><a href="">消息</a></li>
+                  <li><a href="">返修退换货</a></li>
+                  <li><a href="">我的回答</a></li>
+                  <li><a href="">降价商品</a></li>
+                  <li><a href="">我的关注</a></li>
+                </ul>
+              </div>
+              <div class="nav-wdjd-bottom">
+                <ul>
+                  <li><a href="">我的京东</a></li>
+                  <li><a href="">我的优惠券</a></li>
+                  <li><a href="">我的白条</a></li>
+                  <li><a href="">我的理财</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="">京东会员</a></li>
+          <li><a href="">企业采购</a>
+            <div class="top-nav-qycg xc">
+              <ul>
+                <li><a href="">企业购</a></li>
+                <li><a href="">商用场景馆</a></li>
+                <li><a href="">工业品</a></li>
+                <li><a href="">礼品卡</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">客户服务</a>
+            <div class="top-nav-khfw xc">
+              <div class="nav-khfw-top">
+                <p>客户</p>
+                <ul>
+                  <li><a href="">帮助中心</a></li>
+                  <li><a href="">售后服务</a></li>
+                  <li><a href="">在线客服</a></li>
+                  <li><a href="">意见建议</a></li>
+                  <li><a href="">电话客服</a></li>
+                  <li><a href="">客服邮箱</a></li>
+                  <li><a href="">金融咨询</a></li>
+                  <li><a href="">全球售客服</a></li>
+                </ul>
+              </div>
+              <div class="nav-khfw-bottom">
+                <p>商户</p>
+                <ul>
+                  <li><a href="">合作招商</a></li>
+                  <li><a href="">成长中心</a></li>
+                  <li><a href="">商家后台</a></li>
+                  <li><a href="">京麦工作台</a></li>
+                  <li><a href="">商家帮助</a></li>
+                  <li><a href="">规则平台</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="">网站导航</a></li>
+          <li><a href="">手机京东</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sousuo">
+      <div class="dog">
+        <img src="image/dog.jpg" alt="" height="45">
+      </div>
+      <div class="fenlei">
+        <div class="fl-show">
+          <a href="" style="padding-left: 15px;">全部分类</a>
+          <div class="fl-hide">
+            <ul class="fl-nr">
+              <li><a href="">家用电器</a></li>
+              <li><a href="">手机</a>、<a href="">运营商</a>、<a href="">数码</a></li>
+              <li><a href="">电脑</a>、<a href="">办公</a></li>
+              <li><a href="">家具</a>、<a href="">家居</a>、<a href="">家装</a>、<a href="">厨具</a></li>
+              <li><a href="">男装</a>、<a href="">女装</a>、<a href="">童装</a>、<a href="">内衣</a></li>
+              <li><a href="">美妆</a>、<a href="">个护清洁</a>、<a href="">宠物</a></li>
+              <li><a href="">女鞋</a>、<a href="">箱包</a>、<a href="">钟表</a>、<a href="">珠宝</a></li>
+              <li><a href="">男鞋</a>、<a href="">运动</a>、<a href="">户外</a></li>
+              <li><a href="">房产</a>、<a href="">汽车</a>、<a href="">汽车用品</a></li>
+              <li><a href="">母婴</a>、<a href="">玩具乐器</a></li>
+              <li><a href="">食品</a>、<a href="">酒类</a>、<a href="">生鲜</a>、<a href="">特产</a></li>
+              <li><a href="">艺术</a>、<a href="">礼品鲜花</a>、<a href="">农资绿植</a></li>
+              <li><a href="">医药保健</a>、<a href="">计生情趣</a></li>
+              <li><a href="">图书</a>、<a href="">文娱</a>、<a href="">教育</a>、<a href="">电子书</a></li>
+              <li><a href="">机票</a>、<a href="">酒店</a>、<a href="">旅游</a>、<a href="">生活</a></li>
+              <li><a href="">理财</a>、<a href="">众筹</a>、<a href="">白条</a>、<a href="">保险</a></li>
+              <li><a href="">安装</a>、<a href="">维修</a>、<a href="">清洗</a>、<a href="">二手</a></li>
+              <li><a href="">工业品</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <div class="form">
+          <input type="text">
+          <div class="anniu">
+            <button>搜全站</button>
+            <button>搜本站</button>
+          </div>
+        </div>
+      </div>
+      <div class="gwc">
+        <div class="gwc-nr">
+          我的购物车
+        </div>
+      </div>
+    </div>
+    <div class="form-nav">
+      <ul>
+        <li><a href="">安踏</a></li>
+        <li><a href="">New Balance</a></li>
+        <li><a href="">李宁</a></li>
+        <li><a href="">安踏</a></li>
+        <li><a href="">红双喜</a></li>
+        <li><a href="">北面</a></li>
+        <li><a href="">探路者</a></li>
+        <li><a href="">京东体育</a></li>
+      </ul>
+    </div>
+    <div class="shangbiao" style="text-align: center;">
+      <img src="image/lining.jpg" alt="" height="80" style="padding-top: 10px;">
+    </div>
+    <div class="xqy-nav">
+      <ul>
+        <li>首页
+          <hr />
+        </li>
+        <li>所有商品</li>
+        <li>男子</li>
+        <li>女子</li>
+        <li>韦德系列</li>
+        <li>漫威系列</li>
+        <li>健身系列</li>
+        <li>防伪攻略</li>
+      </ul>
+    </div>
+    <div class="lj">
+      <div class="lj-nav">
+        <div class="lj-left">
+          <ul>
+            <li><a href="">运动户外</a> ></li>
+            <li><a href="">运动鞋包</a> ></li>
+            <li><a href="">跑步鞋</a> ></li>
+            <li><a href="">李宁(LI-NING)</a> ></li>
+            <li><a href="">李宁(LI-NING)男...</a></li>
+          </ul>
+        </div>
+        <div class="lj-right">
+          <ul>
+            <li><a href="">悠乐购运动专营店<img src="image/dp1.jpg" alt="" style="vertical-align:middle;"></a></li>
+            <li><a href=""><img src="" alt=""><img src="image/dp2.jpg" alt="" style="vertical-align:middle;">联系客服</a>
+            </li>
+            <li><a href=""><img src="" alt=""><img src="image/dp3.jpg" alt="" style="vertical-align:middle;">关注店铺</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="baobei">
+      <div class="bb-zuo">
+        <div class="small-pic">
+          <ul>
+            <li class="bb-zuo-1"><img src="image/bb-1.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-2.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-3.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-4.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-5.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-6.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-7.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-8.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-9.jpg" alt="" width="350"></li>
+            <li><img src="image/bb-10.jpg" alt="" width="350"></li>
+          </ul>
+          <span></span>
+          <div class="big-pic">
+            <ul>
+              <li><img src="image/bb-1.jpg" alt=""></li>
+              <li><img src="image/bb-2.jpg" alt=""></li>
+              <li><img src="image/bb-3.jpg" alt=""></li>
+              <li><img src="image/bb-4.jpg" alt=""></li>
+              <li><img src="image/bb-5.jpg" alt=""></li>
+              <li><img src="image/bb-6.jpg" alt=""></li>
+              <li><img src="image/bb-7.jpg" alt=""></li>
+              <li><img src="image/bb-8.jpg" alt=""></li>
+              <li><img src="image/bb-9.jpg" alt=""></li>
+              <li><img src="image/bb-10.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <div class="wufeng">
+          <div class="wufeng1">
+            <ul>
+              <li class="bb-zuo-2"><img src="image/bb-1.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-2.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-3.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-4.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-5.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-6.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-7.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-8.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-9.jpg" alt="" width="54"></li>
+              <li><img src="image/bb-10.jpg" alt="" width="54"></li>
+            </ul>
+          </div>
+          <div class="wfbth-left">&gt;</div>
+          <div class="wfbth-right">&lt;</div>
+        </div>
+      </div>
+      <div class="bb-zhong">
+        <div class="biaoti">
+          <h4>李宁（LI-NING）男鞋秋季一体织透气休闲冬新品跑步鞋轻便慢跑运动鞋子 -3黑/银灰 42 (9)</h4>
+        </div>
+        <div class="value">
+          <div class="ms">
+            <div class="ms-left">
+              京东秒杀
+            </div>
+            <div class="ms-right" style="font-size: 12px; color: #fff;">
+              <strong style="color: #fff; font-size: 12px; font-weight: normal;">距离结束</strong>&nbsp;
+              <strong id="hour_show">00</strong>&nbsp;&nbsp;:&nbsp;
+              <strong id="minute_show">00</strong>&nbsp;&nbsp;:&nbsp;
+              <strong id="second_show">00</strong>
+            </div>
+          </div>
+          <div class="jiage">
+            <div class="jg-left">
+              <div class="msj">
+                <div class="msj-left">秒&nbsp;杀&nbsp;价</div>
+                <div class="msj-right" style="margin-left: 5px;"><span
+                    style="font-size: 16px; color: red;">￥</span>135.00</div>
+              </div>
+              <div class="yhq">
+                <div class="yhq-left">优&nbsp;惠&nbsp;券</div>
+                <div class="yhq-right" style="margin-left: 5px;"><span
+                    style="border:1px solid red; padding: 0 5px;">满199减40</span><span
+                    style="border:1px solid red; margin-left: 5px; padding: 0 5px;">满300减60</span 16px; color: red;">
+                </div>
+              </div>
+              <div class="cx">
+                <div class="cx-left">促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</div>
+                <div class="cx-right" style="margin-left: 5px;"><span
+                    style="border:1px solid red; padding: 0 5px; margin-right: 5px;">限购</span>
+                  该商品购买1-50件时享受单件价￥135.00，超出数量以结算价为准，仅限购买一次</div>
+              </div>
+
+            </div>
+            <div class="peisong">
+              <div class="ps-left">配&nbsp;送&nbsp;至</div>
+              <div class="ps-right" style="margin-left: 5px;">
+                <div class="ps-dz">
+                  <ul>
+                    <li><span
+                        style="border:1px solid red; padding: 2px 5px; font-size: 13px; line-height: 30px;">张家口职业技术学院</span></span>
+                    <li><a href="">有货</a></li>
+                    <li><a href="">支持</a></li>
+                    <li><a href="">货到付款</a></li>
+                    <li><a href="">免运费</a></li>
+                  </ul>
+                </div>
+                <div class="xieyi">
+                  <p style="font-size: 12px; font-weight: lighter;">由<a
+                      style="color: red; font-size: 12px;">悠乐购运动专营店</a>从 福建泉州市 发货, 并提供售后服务.</p>
+                </div>
+              </div>
+            </div>
+            <div class="color">
+              <div class="color-left">
+                选择颜色
+              </div>
+              <div class="color-right">
+                <ul>
+                  <li class="ys"><img src="image/bb-1.jpg" alt="" width="40">
+                    <div class="mc">-3黑/银黑</div>
+                  </li>
+                  <li><img src="image/bb-2.jpg" alt="" width="40">
+                    <div class="mc">-4新基础黑/亮光蓝</div>
+                  </li>
+                  <li><img src="image/bb-3.jpg" alt="" width="40">
+                    <div class="mc">标准黑/标准白</div>
+                  </li>
+                  <li><img src="image/bb-4.jpg" alt="" width="40">
+                    <div class="mc">-1新黑/银色</div>
+                  </li>
+                  <li><img src="image/bb-5.jpg" alt="" width="40">
+                    <div class="mc">标准白/标准黑/李宁h红-5</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="chima">
+              <div class="chima-left">
+                选择尺码
+              </div>
+              <div class="chima-right">
+                <ul>
+                  <li class="cm">39(6.5)</li>
+                  <li>40(7.5)</li>
+                  <li>41(8.5)</li>
+                  <li>42(9.5)</li>
+                  <li>43(10.5)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="jrgwc"
+              style="font-size: 18px; line-height: 50px; text-align: center; font-weight: bold; color: #fff;">
+              加入购物车
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bb-you">
+        <div class="kk"><span>————</span>&nbsp;&nbsp;&nbsp;看了又看&nbsp;&nbsp;&nbsp;<span>————</span></div>
+        <!-- <img src="image/lb3.PNG" alt="" width="170" style="padding-left: 20px;"> -->
+        <div class="jj">
+          <ul>
+            <li><img src="image/you-1.png" alt="" width="150" height="150"><span>李宁（LI-NING）男鞋秋...</span><b>￥192.00</b>
+            </li>
+            <li><img src="image/you-2.jpg" alt="" width="150" height="150"><span>李宁（LI-NING）男鞋秋...</span><b>￥522.00</b>
+            </li>
+            <li><img src="image/you-3.jpg" alt="" width="150" height="150"><span>李宁（LI-NING）男鞋秋...</span><b>￥195.00</b>
+            </li>
+            <li><img src="image/you-4.jpg" alt="" width="150" height="150"><span>李宁（LI-NING）男鞋秋...</span><b>￥1002.00</b>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="content">
+    <div class="datu">
+      <div class="js-lb">
+        <ul>
+          <li><a href="javascript:void(0);" style="color: #fff;">商品介绍</a></li>
+          <li><a href="javascript:void(0);">规格与包装</a></li>
+          <li><a href="javascript:void(0);">售后保障</a></li>
+          <li><a href="javascript:void(0);">商品评价(11万+)</a></li>
+          <li><a href="javascript:void(0);">本店好评商品</a></li>
+        </ul>
+      </div>
+      <div class="list">
+        <div class="big1">
+          <div class="xxxx">
+            <div class="xx-top">
+              品牌： 李宁（LI-NING）
+            </div>
+            <div class="xx-bottom">
+              <div class="a1">
+                <p>商品名称：李宁（LI-NING）男鞋秋...</p>
+                <p>商品产地：中国大陆</p>
+                <p>选购热点：透气，经典款</p>
+                <p>功能：缓冲，透气，轻质</p>
+              </div>
+              <div class="a2">
+                <p>商品编号：20043805454</p>
+                <p>货号：ARBL023</p>
+                <p>闭合方式：系带</p>
+                <p>适用人群：男士</p>
+              </div>
+              <div class="a3">
+                <p>店铺： 悠乐购运动专营店</p>
+                <p>尺码：42</p>
+                <p>适合路面：跑道，公路，小道</p>
+                <p>上市时间：2018年冬季</p>
+              </div>
+              <div class="a4">
+                <p>商品毛重：1.0kg</p>
+                <p>鞋面材质：织物</p>
+                <p>类别：入门跑鞋，稳定跑鞋，缓冲...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="b1">
+            <img src="image/xx-1.jpg" alt="" width="1200">
+          </div>
+          <div class="b2">
+            <img src="image/xx-2.jpg" alt="">
+            <img src="image/xx-3.jpg" alt="">
+          </div>
+        </div>
+        <div class="big2">2</div>
+        <div class="big3">3</div>
+        <div class="big4">4</div>
+        <div class="big5">5</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="foot">
+    <div class="jieshao">
+      <div class="zuihou">
+        <ul>
+          <li class="duo"><img src="images/55.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+          <li class="kuai"><img src="images/56.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+          <li class="hao"><img src="images/57.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+          <li class="sheng"><img src="images/58.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+        </ul>
+      </div>
+      <div class="zhinan">
+        <ul>
+          <li>
+            <h5>购物指南</h5>
+            <a href="">购物流程</a><br>
+            <a href="">会员介绍</a><br>
+            <a href="">生活旅游</a><br>
+            <a href="">常见问题</a><br>
+            <a href="">大家电</a><br>
+            <a href="">联系客服</a>
+          </li>
+          <li>
+            <h5>配送方式</h5>
+            <a href="">上门自提</a><br>
+            <a href="">211限时达</a><br>
+            <a href="">配送服务查询</a><br>
+            <a href="">配送费收费标准</a><br>
+            <a href="">海外配送</a>
+          </li>
+          <li>
+            <h5>支付方式</h5>
+            <a href="">货到付款</a><br>
+            <a href="">在线支付</a><br>
+            <a href="">分期付款</a><br>
+            <a href="">公司转账</a>
+          </li>
+          <li>
+            <h5>售后服务</h5>
+            <a href="">售后政策</a><br>
+            <a href="">价格保护</a><br>
+            <a href="">退款说明</a><br>
+            <a href="">返修/退换货</a><br>
+            <a href="">取消订单</a>
+          </li>
+          <li>
+            <h5>特殊服务</h5>
+            <a href="">夺宝岛</a><br>
+            <a href="">DIY装机</a><br>
+            <a href="">延保服务</a><br>
+            <a href="">京东E卡</a><br>
+            <a href="">京东通信</a><br>
+            <a href="">京鱼座智能</a>
+          </li>
+        </ul>
+        <div class="ziying">
+          <h5>京东自营覆盖区县</h5>
+          <p style="font-weight: light;">京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+          <a href="">查看详情></a>
+        </div>
+      </div>
+      <div class="jieshao_nav">
+        <ul>
+          <li><a href="">关于我们</a></li>
+          <li><a href="">联系我们</a></li>
+          <li><a href="">联系客服</a></li>
+          <li><a href="">合作招商</a></li>
+          <li><a href="">商家帮助</a></li>
+          <li><a href="">营销中心</a></li>
+          <li><a href="">手机京东</a></li>
+          <li><a href="">友情链接</a></li>
+          <li><a href="">销售联盟</a></li>
+          <li><a href="">京东社区</a></li>
+          <li><a href="">风险监测</a></li>
+          <li><a href="">隐私政策</a></li>
+          <li><a href="">京东公益</a></li>
+          <li><a href="">English Site</a></li>
+          <li><a href="">Media & IR</a></li>
+        </ul>
+        <br>
+        <ul class="jinggongan">
+          <li><a href="">京公网安备 11000002000088号</a></li>
+          <li><a href="">京ICP证070359号</a></li>
+          <li><a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a></li>
+          <li><a href="">新出发京零 字第大120007号</a></li>
+        </ul>
+        <br>
+        <ul class="hulianwang">
+          <li><a href="">互联网出版许可证编号新出网证(京)字150号</a></li>
+          <li><a href="">出版物经营许可证</a></li>
+          <li><a href="">网络文化经营许可证京网文[2014]2148-348号</a></li>
+          <li><a href="">违法和不良信息举报电话：4006561155</a></li>
+        </ul>
+        <br>
+        <ul class="xiaofeizhe">
+          <li><span>Copyright © 2004 -</span></li>
+          <li><span>消费者维权热线：4006067733</span>&nbsp;&nbsp;<a href="">经营证照</a></li>
+          <li><a href="">(京)网械平台备字(2018)第00003号</a></li>
+          <li><a href="">营业执照</a></li>
+        </ul>
+        <br>
+        <ul class="guojia">
+          <li><img src="images/08.gif" alt="">&nbsp;&nbsp;<a href="">Global Site</a></li>
+          <li><img src="images/09.gif" alt="">&nbsp;&nbsp;<a href="">Сайт России</a></li>
+          <li><img src="images/07.gif" alt="">&nbsp;&nbsp;<a href="">Situs Indonesia</a></li>
+          <li><img src="images/10.gif" alt="">&nbsp;&nbsp;<a href="">Sitio de España</a></li>
+          <li><img src="images/11.gif" alt="">&nbsp;&nbsp;<a href="">เว็บไซต์ประเทศไทย</a></li>
+        </ul>
+        <br>
+        <ul class="jingdongqixia">
+          <li><span>京东旗下网站：</span><a href="">京东钱包</a></li>
+          <li><a href="">京东云</a></li>
+        </ul>
+        <br>
+        <ul class="kexinwangzhan">
+          <li><img src="images/59.gif" alt="" class="img1" style="padding-top: 10px;">
+            <p>可信网站<br>信用评估</p>
+          </li>
+          <li><img src="images/60.gif" alt="" class="img2" style="padding-top: 10px;">
+            <p>网络警察<br>提醒你</p>
+          </li>
+          <li><img src="images/61.gif" alt="" class="img4" style="padding-top: 10px;">
+            <p class="chengxin">诚信网站</p>
+          </li>
+          <li><img src="images/62.gif" alt="" class="img5" style="padding-top: 10px;">
+            <p>中国互联网<br>举报中心</p>
+          </li>
+          <li><img src="images/63.gif" alt="" class="img6" style="padding-top: 10px;">
+            <p>网络举报<br>APP下载</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

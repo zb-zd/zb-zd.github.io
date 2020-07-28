@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script>
+    $(function (argument) {
+    	$(".wenbenkuang_b a:eq(0)").css("color","red");
+    	$(".sousuojiemian_b a:eq(0)").css("color","red");
+    	$(".sousuojiemian_b a:eq(1)").css("color","red");
+
+       $('.nav .nav_c .nav_c_l ul>li div').hover(function () {
+          $('.nav .nav_c .nav_c_l ul li').find('.erjidaohang').show().siblings('div').css('background','#fff');
+        },function (argument) {
+          $('.nav .nav_c .nav_c_l ul li .erjidaohang').hide().siblings('div').css('background','');
+        })
+      $(".nav_l").bind("mouseover",function(argument) {
+      $("aside").show();
+      $(".nav_l").addClass("high");
+      })
+      $(".nav_l").bind("mouseout",function(argument) {
+      // $("aside").hide();
+      $(".nav_l").removeClass("high");
+      })
+
+
+      $(".wode").bind("mouseover",function(argument) {
+      $(".wo_b").show();
+      $(".wode").addClass("high");
+      })
+      $(".wode").bind("mouseout",function(argument) {
+      $(".wo_b").hide();
+      $(".wode").removeClass("high");
+      })
+
+
+      $(".caigou").bind("mouseover",function(argument) {
+      $(".cai_b").show();
+      $(".caigou").addClass("high");
+      })
+      $(".caigou").bind("mouseout",function(argument) {
+      $(".cai_b").hide();
+      $(".caigou").removeClass("high");
+      })
+
+
+      $(".fuwu").bind("mouseover",function(argument) {
+      $(".fuwu_b").show();
+      $(".fuwu").addClass("high");
+      })
+      $(".fuwu").bind("mouseout",function(argument) {
+      $(".fuwu_b").hide();
+      $(".fuwu").removeClass("high");
+      })
+
+
+      $(".wangzhan").bind("mouseover",function(argument) {
+      $(".wangzhan_b").show();
+      $(".wangzhan").addClass("high");
+      })
+      $(".wangzhan").bind("mouseout",function(argument) {
+      $(".wangzhan_b").hide();
+      $(".wangzhan").removeClass("high");
+      })
+      
+        //   $('.box .center .datu_l ul li').hover(function (argument) {
+        //   $('.box .center .datu_l ul li.jiayongdianqi').find('.dianqi').show();
+        // },function (argument) {
+        //   $('.box .center .datu_l ul li.jiayongdianqi .dianqi').hide();
+        // })
+
+        //   $('.miaosha_bg .miaosha_c1 div').hover(function () {
+        //   $('.miaosha_bg .miaosha_c1').find('.sanjiao').show();
+        // },function (argument) {
+        //   $('.miaosha_bg .miaosha_c1 .sanjiao').hide();
+        // }) 
+      //家用电器
+      $(".box .center .datu_l ul li.jiayongdianqi").bind("mouseover",function(argument) {
+      $(".dianqi").show();
+      $(".box .center .datu_l ul li.jiayongdianqi").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.jiayongdianqi").bind("mouseout",function(argument) {
+      $(".dianqi").hide();
+      $(".box .center .datu_l ul li.jiayongdianqi").removeClass("datu_l_yang");
+      })
+
+      //手机运营商
+      $(".box .center .datu_l ul li.datu_l_2").bind("mouseover",function(argument) {
+      $(".shouji").show();
+      $(".box .center .datu_l ul li.datu_l_2").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_2").bind("mouseout",function(argument) {
+      $(".shouji").hide();
+      $(".box .center .datu_l ul li.datu_l_2").removeClass("datu_l_yang");
+      })
+
+      //电脑
+      $(".box .center .datu_l ul li.datu_l_3").bind("mouseover",function(argument) {
+      $(".diannao").show();
+      $(".box .center .datu_l ul li.datu_l_3").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_3").bind("mouseout",function(argument) {
+      $(".diannao").hide();
+      $(".box .center .datu_l ul li.datu_l_3").removeClass("datu_l_yang");
+      })
+
+      //家居
+      $(".box .center .datu_l ul li.datu_l_4").bind("mouseover",function(argument) {
+      $(".jiaju").show();
+      $(".box .center .datu_l ul li.datu_l_4").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_4").bind("mouseout",function(argument) {
+      $(".jiaju").hide();
+      $(".box .center .datu_l ul li.datu_l_4").removeClass("datu_l_yang");
+      })
+
+      //男装
+      $(".box .center .datu_l ul li.datu_l_5").bind("mouseover",function(argument) {
+      $(".nanzhuang").show();
+      $(".box .center .datu_l ul li.datu_l_5").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_5").bind("mouseout",function(argument) {
+      $(".nanzhuang").hide();
+      $(".box .center .datu_l ul li.datu_l_5").removeClass("datu_l_yang");
+      })
+
+      //美妆
+      $(".box .center .datu_l ul li.datu_l_6").bind("mouseover",function(argument) {
+      $(".meizhuang").show();
+      $(".box .center .datu_l ul li.datu_l_6").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_6").bind("mouseout",function(argument) {
+      $(".meizhuang").hide();
+      $(".box .center .datu_l ul li.datu_l_6").removeClass("datu_l_yang");
+      })
+
+      //女鞋
+      $(".box .center .datu_l ul li.datu_l_7").bind("mouseover",function(argument) {
+      $(".nvxie").show();
+      $(".box .center .datu_l ul li.datu_l_7").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_7").bind("mouseout",function(argument) {
+      $(".nvxie").hide();
+      $(".box .center .datu_l ul li.datu_l_7").removeClass("datu_l_yang");
+      })
+
+      //男鞋
+      $(".box .center .datu_l ul li.datu_l_8").bind("mouseover",function(argument) {
+      $(".nvxie").show();
+      $(".box .center .datu_l ul li.datu_l_8").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_8").bind("mouseout",function(argument) {
+      $(".nvxie").hide();
+      $(".box .center .datu_l ul li.datu_l_8").removeClass("datu_l_yang");
+      })
+
+      //房产
+      $(".box .center .datu_l ul li.datu_l_9").bind("mouseover",function(argument) {
+      $(".fangchan").show();
+      $(".box .center .datu_l ul li.datu_l_9").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_9").bind("mouseout",function(argument) {
+      $(".fangchan").hide();
+      $(".box .center .datu_l ul li.datu_l_9").removeClass("datu_l_yang");
+      })
+
+      //母婴
+      $(".box .center .datu_l ul li.datu_l_10").bind("mouseover",function(argument) {
+      $(".muying").show();
+      $(".box .center .datu_l ul li.datu_l_10").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_10").bind("mouseout",function(argument) {
+      $(".muying").hide();
+      $(".box .center .datu_l ul li.datu_l_10").removeClass("datu_l_yang");
+      })
+
+      //食品
+      $(".box .center .datu_l ul li.datu_l_11").bind("mouseover",function(argument) {
+      $(".shipin").show();
+      $(".box .center .datu_l ul li.datu_l_11").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_11").bind("mouseout",function(argument) {
+      $(".shipin").hide();
+      $(".box .center .datu_l ul li.datu_l_11").removeClass("datu_l_yang");
+      })
+
+      //艺术
+      $(".box .center .datu_l ul li.datu_l_12").bind("mouseover",function(argument) {
+      $(".yishu").show();
+      $(".box .center .datu_l ul li.datu_l_12").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_12").bind("mouseout",function(argument) {
+      $(".yishu").hide();
+      $(".box .center .datu_l ul li.datu_l_12").removeClass("datu_l_yang");
+      })
+
+      //医药保健
+      $(".box .center .datu_l ul li.datu_l_13").bind("mouseover",function(argument) {
+      $(".yiyaobaojian").show();
+      $(".box .center .datu_l ul li.datu_l_13").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_13").bind("mouseout",function(argument) {
+      $(".yiyaobaojian").hide();
+      $(".box .center .datu_l ul li.datu_l_13").removeClass("datu_l_yang");
+      })
+
+      //图文
+      $(".box .center .datu_l ul li.datu_l_14").bind("mouseover",function(argument) {
+      $(".tuwen").show();
+      $(".box .center .datu_l ul li.datu_l_14").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_14").bind("mouseout",function(argument) {
+      $(".tuwen").hide();
+      $(".box .center .datu_l ul li.datu_l_14").removeClass("datu_l_yang");
+      })
+
+      //机票
+      $(".box .center .datu_l ul li.datu_l_15").bind("mouseover",function(argument) {
+      $(".jipiao").show();
+      $(".box .center .datu_l ul li.datu_l_15").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_15").bind("mouseout",function(argument) {
+      $(".jipiao").hide();
+      $(".box .center .datu_l ul li.datu_l_15").removeClass("datu_l_yang");
+      })
+
+      //理财
+      $(".box .center .datu_l ul li.datu_l_16").bind("mouseover",function(argument) {
+      $(".licai").show();
+      $(".box .center .datu_l ul li.datu_l_16").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_16").bind("mouseout",function(argument) {
+      $(".licai").hide();
+      $(".box .center .datu_l ul li.datu_l_16").removeClass("datu_l_yang");
+      })
+
+      //安装
+      $(".box .center .datu_l ul li.datu_l_17").bind("mouseover",function(argument) {
+      $(".anzhuang").show();
+      $(".box .center .datu_l ul li.datu_l_17").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_17").bind("mouseout",function(argument) {
+      $(".anzhuang").hide();
+      $(".box .center .datu_l ul li.datu_l_17").removeClass("datu_l_yang");
+      })
+
+      //工业品
+      $(".box .center .datu_l ul li.datu_l_18").bind("mouseover",function(argument) {
+      $(".gongyepin").show();
+      $(".box .center .datu_l ul li.datu_l_18").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_l ul li.datu_l_18").bind("mouseout",function(argument) {
+      $(".gongyepin").hide();
+      $(".box .center .datu_l ul li.datu_l_18").removeClass("datu_l_yang");
+      })
+
+      //轮播图
+      $(".box .center .datu_c .datu_c_l ul.lunbo_tu li img").eq(0).show();
+      $(".box .center .datu_c .datu_c_l .number li").mouseover(function(){
+      $(this).addClass('number_1').siblings(/*消除同级元素*/).removeClass('number_1');
+      i=$(this).index() /*index 当前元素的意思索引值*/
+      $(".box .center .datu_c .datu_c_l ul.lunbo_tu li img").eq(i).fadeIn(/*淡入*/).siblings().fadeOut(/*淡出*/)  /*eq 0开始*/
+       });
+
+      //箭头切换
+      //右
+      var i=0;
+      function you(argument) {
+      i++;
+      if(i==8){
+      i=0
+      }
+      $(".box .center .datu_c ul.number li").eq(i).addClass("number_1").siblings().removeClass("number_1");
+      $(".box .center .datu_c .datu_c_l .lunbo_tu li img").eq(i).fadeIn().siblings().fadeOut();
+     }
+      $(".box .center .datu_c .datu_c_l .you").click(function (argument) {
+      you();
+      })
+      //左
+      var i=0;
+      	function zuo(argument) {
+      		i--;//递减
+      		if (i==-1) {
+      			i=7;
+      		}
+      		$(".box .center .datu_c ul.number li").eq(i).addClass("number_1").siblings(/*消除同级元素*/).removeClass("number_1");
+      		$(".box .center .datu_c .datu_c_l .lunbo_tu li img").eq(i).fadeIn(/*淡入*/).siblings().fadeOut(/*淡出*/)  /*eq 0开始*/
+      	}
+      	$(".box .center .datu_c .datu_c_l .zuo").click(function (argument) {
+      		zuo();
+      	})
+      //自动播放
+      var t=setInterval(you,1500);
+      $(".box .center .datu_c .datu_c_l .lunbo_tu li img").hover(function (argument) {
+        clearInterval(t);
+      },function (argument) {
+        t=setInterval(you,1500);
+      })
+    //大图旁边 移入显示按钮
+      $(".box .center .datu_c .datu_c_r").bind("mouseover",function(argument) {
+      $(".box .center .datu_c .datu_c_r_zuobut").show();
+      // $(".box .center .datu_c .datu_c_r").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_c .datu_c_r").bind("mouseout",function(argument) {
+      $(".box .center .datu_c .datu_c_r_zuobut").hide();
+      // $(".box .center .datu_c .datu_c_r").removeClass("datu_l_yang");
+      })
+
+
+      $(".box .center .datu_c .datu_c_r").bind("mouseover",function(argument) {
+      $(".box .center .datu_c .datu_c_r_youbut").show();
+      // $(".box .center .datu_c .datu_c_r").addClass("datu_l_yang");
+      })
+      $(".box .center .datu_c .datu_c_r").bind("mouseout",function(argument) {
+      $(".box .center .datu_c .datu_c_r_youbut").hide();
+      // $(".box .center .datu_c .datu_c_r").removeClass("datu_l_yang");
+      })
+
+      //箭头切换
+      //右
+      var i=0;
+      function datu_c_r_youbut(argument) {
+      i++;
+      if(i==2){
+      i=0
+      }
+      // $(".box .center .datu_c ul.number li").eq(i).addClass("number_1").siblings().removeClass("number_1");
+      $(".box .center .datu_c .datu_c_r ul").eq(i).fadeIn().siblings().fadeOut();
+     }
+      $(".box .center .datu_c .datu_c_r_youbut").click(function (argument) {
+      datu_c_r_youbut();
+      })
+      //左
+      var i=0;
+      	function datu_c_r_zuobut(argument) {
+      		i--;//递减
+      		if (i==-1) {
+      			i=1;
+      		}
+      		// $(".box .center .datu_c ul.number li").eq(i).addClass("number_1").siblings(/*消除同级元素*/).removeClass("number_1");
+      		$(".box .center .datu_c .datu_c_r ul").eq(i).fadeIn(/*淡入*/).siblings().fadeOut(/*淡出*/)  /*eq 0开始*/
+      	}
+      	$(".box .center .datu_c .datu_c_r_zuobut").click(function (argument) {
+      		datu_c_r_zuobut();
+      	})
+  })
+     //自动播放
+      var i=0;
+      function zidong(argument) {
+      i++;
+      if(i==2){
+      i=0
+      }
+      $(".box .center .datu_b .datu_b_r .datu_b_r_nei ul.zidongyuan li").eq(i).addClass("number_1").siblings().removeClass("number_1");
+      $(".box .center .datu_b .datu_b_r .datu_b_r_nei ul.tuli li").eq(i).fadeIn().siblings().fadeOut();
+     }
+      // $(".box .center .datu_b .datu_b_r .datu_b_r_nei .zidong").click(function (argument) {
+      //zidong();
+      // })
+
+ var t=setInterval(zidong,1500);
+      $(".box .center .datu_b .datu_b_r .datu_b_r_nei ul.tuli li").hover(function (argument) {
+        clearInterval(t);
+      },function (argument) {
+        t=setInterval(zidong,1500);
+      })
+
+      //
+      		$(function () {
+			var _currentpos = 0;
+			var _nextpos = 0;
+			init();
+			//初始化操作
+
+			scrollpic();
+
+			function init() {
+				//为了实现无缝滚动将所有的li复制
+				$('.box .center .datu_b .datu_b_c .allpic').width(3240);
+				$('.box .center .datu_b .datu_b_c .allpic ul li').clone().appendTo($('.box .center .datu_b .datu_b_c .allpic ul')); //复制内容到尾部
+				//宽度和内容都复制一次，使动画不会在最后一张图时反向回到第一张，而是进入下一遍循环
+			}
+
+			function scrollpic() { //css()和animate()的作用相同(都会改变left值)，这里的css()只用来使动画不会反向运动(具体见line-89)
+				$('.box .center .datu_b .datu_b_c .allpic').css('left', _currentpos + 'px');
+				$('.box .center .datu_b .datu_b_c .allpic').stop().animate({ //stop()用来使多次点击时动画不会堆积播放(已经不点了还在播放)
+					left: _nextpos + 'px'
+				}, 810);
+			}
+			
+			//点击向左按钮 left增加
+			$('.box .center .datu_b .datu_b_c .datu_b_c_leftbut').click(function () {
+				if (_currentpos == 0) {
+					_currentpos = -4000; //0和-4000的内容一样，使动画能够重新从-4000开始(-4000~0)
+				}
+				_nextpos = _currentpos + 810; //改变_nextpos值从而使left值改变，然后执行函数scrollpic()播放动画
+
+				scrollpic();
+				_currentpos = _nextpos;
+				//一定先执行函数scrollpic()再改变_currentpos,不然在点击时会使css()先执行，然后再进行动画(具体表现为闪到下一张图再回到上一张图进行动画，原因是css()可以瞬间改变，而动画有延迟)
+			})
+
+			//点击向右按钮
+			$('.box .center .datu_b .datu_b_c .datu_b_c_rightbut').click(function () {
+				if (_currentpos == -6480) {
+					_currentpos = -2430; //-7000和-3000的内容一样，使动画能够重新从-3000开始(-3000~-7000)
+				}
+				_nextpos = _currentpos -810;
+
+				scrollpic();
+				_currentpos = _nextpos;
+			})
+      //倒计时
+      var intDiff = parseInt(60);//倒计时总秒数量
+function timer(intDiff){
+    window.setInterval(function(){
+    var day=0,
+        hour=0,
+        minute=0,
+        second=0;//时间默认值        
+    if(intDiff > 0){
+        day = Math.floor(intDiff / (60 * 60 * 24));
+        hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+        minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+        second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+    }
+    if (minute <= 9) minute = '5' + minute;
+    if (second <= 9) second = '0' + second;
+    // $('#day_show').html(day+"天");
+    $('#hour_show').html('<s id="h"></s>'+hour);
+    $('#minute_show').html('<s></s>'+minute);
+    $('#second_show').html('<s></s>'+second);
+    intDiff--;
+    }, 1000);
+} 
+$(function(){
+    timer(intDiff);
+}); 
+		})
+	</script>
+</head>
+<body>
+<div class="box">
+<div class="nav_t">
+<img src="images/66.png" alt="" class="nav_t_img">
+</div>
+  <div class="nav">
+    <div class="nav_c">
+      <div class="navl">
+        <div class="dingwei">
+          <div class="dingweitubiao">
+           <img src="images/03.png" alt="">
+           </div>
+          <div class="hebei">
+          <a href="">河北</a>
+          </div>  
+        </div>
+        <aside>
+          <ul>
+          	     <li><a href="">北京</a></li>
+                 <li><a href="">上海</a></li>
+                 <li><a href="">天津</a></li>
+                 <li><a href="">重庆</a></li>
+                 <li><a href="">河北</a></li>
+                 <li><a href="">山西</a></li>
+                 <li><a href="">河南</a></li>
+                 <li><a href="">辽宁</a></li>
+                 <li><a href="">黑龙江</a></li>
+                 <li><a href="">吉林</a></li>
+                 <li><a href="">内蒙古</a></li>
+                 <li><a href="">江苏</a></li>
+                 <li><a href="">山东</a></li>
+                 <li><a href="">安徽</a></li>
+                 <li><a href="">浙江</a></li>
+                 <li><a href="">福建</a></li>
+                 <li><a href="">湖北</a></li>
+                 <li><a href="">湖南</a></li>
+                 <li><a href="">广东</a></li>
+                 <li><a href="">广西</a></li>
+                 <li><a href="">江西</a></li>
+                 <li><a href="">四川</a></li>
+                 <li><a href="">海南</a></li>
+                 <li><a href="">贵州</a></li>
+                 <li><a href="">云南</a></li>
+                 <li><a href="">西藏</a></li>
+                 <li><a href="">陕西</a></li>
+                 <li><a href="">甘肃</a></li>
+                 <li><a href="">青海</a></li>
+                 <li><a href="">宁夏</a></li>
+                 <li><a href="">新疆</a></li>
+                 <li><a href="">港澳</a></li>
+                 <li><a href="">台湾</a></li>
+                 <li><a href="">钓鱼岛</a></li>
+                 <li><a href="">海外</a></li>
+          </ul>
+          <hr size="1">
+          <a href="">地区专享版本</a><br>
+          <a href="">中国港澳</a>
+          <hr size="1">
+          <a href="">Available Sites</a>
+          <div class="aside_x">
+            <ul>
+          	  <li><img src="images/07.gif" alt=""><a href="">Global Site</a></li>
+          	  <li><img src="images/08.gif" alt=""><a href="">Gant Poccnn</a></li>
+          	  <li><img src="images/09.gif" alt=""><a href="">Situs Indonesia</a></li>
+          	  <li><img src="images/10.gif" alt=""><a href="">Sitio de Espana</a></li>
+          	  <li><img src="images/11.gif" alt=""><a href="">BJASKLASKJAS</a></li>
+            </ul>
+          </div>
+        </aside>
+    </div>
+    <div class="navr">
+    <ul>
+      <li><a href="">你好,请登录</a>&nbsp;&nbsp;<a href=""><span>免费注册</span></a>&nbsp;</li>
+    	<li><a href="">我的订单</a>&nbsp;</li>
+    	<li>
+      <div class="wode">
+      <a href="">我的京东</a><img src="images/17.gif" alt="">&nbsp;
+        <div class="wo_b">
+          <div class="wo_b_t">
+            <ul> 
+              <li><a href="">待处理订单</a></li>
+              <li><a href="">消息</a></li>
+              <li><a href="">返修退换货</a></li>
+              <li><a href="">我的问答</a></li>
+              <li><a href="">降价商品</a></li>
+              <li><a href="">我的关注</a></li>
+            </ul>
+          </div>
+          <div class="wo_b_b">
+          <ul>
+            <li><a href="">我的京豆</a></li>
+            <li><a href="">我的优惠</a></li>
+            <li><a href="">我的白条</a></li>
+            <li><a href="">我的理财</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      </li>
+    	<li><a href="">京东会员</a>&nbsp;</li>
+
+    	<li>
+      <div class="caigou">
+      <span><a href="">企业采购</a></span><img src="images/17.gif" alt="">&nbsp;
+      <div class="cai_b">
+       <ul>
+       	<li><a href="">企业购</a></li>
+       	<li><a href="">商用场景馆</a></li>
+       	<li><a href="">工业品</a></li>
+       	<li><a href="">礼品卡</a></li>
+       </ul>
+      </div>
+      </div>
+      </li>
+
+    	<li>
+      <div class="fuwu">
+      <a href="">客户服务</a><img src="images/17.gif" alt="">&nbsp;
+      <div class="fuwu_b">
+        <div class="fuwu_b_t">
+          <h5>客户</h5>
+          <ul>
+        	  <li><a href="">帮助中心</a></li>
+        	  <li><a href="">售后服务</a></li>
+        	  <li><a href="">在线客服</a></li>
+        	  <li><a href="">意见建议</a></li>
+        	  <li><a href="">电话客服</a></li>
+              <li><a href="">客服邮箱</a></li>
+        	  <li><a href="">金融资讯</a></li>
+        	  <li><a href="">全球售客服</a></li>
+          </ul>
+        </div>
+        <div class="fuwu_b_b">
+        <h5>商户</h5>
+        <ul>
+        	<li><a href="">合作招商</a></li>
+        	<li><a href="">成长中心</a></li>
+        	<li><a href="">商家后台</a></li>
+        	<li><a href="">京麦工作台</a></li>
+        	<li><a href="">商家帮助</a></li>
+        	<li><a href="">规则平台</a></li>
+        </ul>
+        </div>
+      </div>
+      </div>
+      </li>
+    	<li>
+      <div class="wangzhan">
+      <a href="">网站导航</a><img src="images/17.gif" alt="">&nbsp;
+      <div class="wangzhan_b">asdsad</div>
+      </div>
+      </li>
+    	<li><a href="">手机京东</a>&nbsp;</li>
+    </ul>
+    </div>
+    </div>
+  </div>
+  <img src="images/67.png" alt="" class="left_img">
+  <img src="images/68.gif" alt="" class="right_img">
+  <div class="sousuojiemian">
+     <div class="jdlogo">
+       <img src="images/19.gif" alt="">
+     </div>
+     <div class="wenbenkuang">
+       <input type="text">
+       <div class="xiangji">
+        <img src="images/16.gif" alt="">
+       </div>
+       <div class="anniu">
+        <button type="button" style="border:3px solid #e1251b"><img src="images/15.gif" alt=""></button>
+       </div>
+     </div>
+     <div class="gouwuche">
+        <img src="images/13.gif" alt="">
+        <a href="">我的购物车</a>
+     </div>
+     <div class="wenbenkuang_b">
+       <a href="">抢家电补贴</a>
+       <a href="">坚果Pro3</a>
+       <a href="">智能网络</a>
+       <a href="">电脑数码</a>
+       <a href="">女装黑五</a>
+       <a href="">爆款空调</a>
+       <!-- <a href="">iPhone</a> -->
+    </div>
+    <div class="sousuojiemian_b">
+       <a href="ms/jingdongmiaosha.html"><strong>秒杀</strong></a>
+       <a href=""><strong>优惠券</strong></a>
+       <a href="">PLUS会员</a>
+       <a href="">品牌闪购</a>
+       <a href="">拍卖</a>
+       <a href="">京东时尚</a>
+       <a href="">京东超市</a>
+       <a href="">京东生鲜</a>
+    </div>
+  </div>
+  <div class="center">
+<!--     <div class="gudinglan">
+
+    </div> -->
+    <div class="datu_l">
+      <ul>
+      	<li class="jiayongdianqi"><a href="">家用电器</a></li>
+      	 <div class="dianqi">
+            <ul class="dianqi_wen">
+              <li>
+              <div class="jiadianguan">家电馆></div>
+              <div class="zhuanmaidian">家电专卖店></div>
+              <div class="jiadianfuwu">家电服务></div>
+              <div class="qiyecaigou">企业采购></div>
+              <div class="shangyongdianqi">商用电器></div>
+              <div class="yijiuhuanxin">以旧换新</div>
+              </li>
+              <li>
+              <a href=""><strong>电视&nbsp;></strong></a><a href=""></a>           
+              <a href="">超薄电视</a>
+              <a href="">全面屏电视</a>
+              <a href="">智能电视</a>
+              <a href="">OLED电视</a>
+              <a href="">智慧屏4K超清电视</a>
+              <a href="">55英寸</a>
+              <a href="">65英寸 </a>
+              <a href="">电视配件</a>
+              </li>
+              <li>
+              <a href=""><strong>空调&nbsp;></strong></a>      
+              <a href="">空调</a>
+              <a href="">挂机空调</a>
+              <a href="">柜机中央空调</a>
+              <a href="">变频空调</a>
+              <a href="">一级能效</a>
+              <a href="">移动空调</a>
+              <a href="">以旧换新</a>
+              </li>
+              <li>
+              <a href=""><strong>洗衣机&nbsp;></strong></a>
+                   
+              <a href="">滚筒洗衣机</a>
+              <a href="">洗烘一体机</a>
+              <a href="">波轮洗衣机</a>
+              <a href="">迷你洗衣机</a>
+              <a href="">烘干机</a>
+              <a href="">洗衣机配件</a>
+              </li>
+              <li>
+              <a href=""><strong>冰箱&nbsp;></strong></a>
+              <a href="">多门</a>
+              <a href="">对开门</a>
+              <a href="">三门</a>
+              <a href="">冷柜/冰吧</a>
+              <a href="">酒柜</a>
+              <a href="">冰箱配件</a>
+              <a href="">双门</a>
+              </li>
+              <li>
+              <a href=""><strong>厨卫大电&nbsp;></strong></a>
+              <a href="">油烟机燃</a>
+              <a href="">气灶烟灶</a>
+              <a href="">套装集成灶</a>
+              <a href="">消毒柜洗碗机</a>
+              <a href="">电热水器</a>
+              <a href="">燃气热水器</a>
+              <a href="">空气能热水器</a>
+<!--               <a href="">太阳能热水器</a>
+              <a href="">嵌入式厨</a>
+              <a href="">电烟机</a>
+              <a href="">灶具配件</a> -->
+           <!--    <a href=""></a> -->
+              </li>
+              <li>
+              <a href=""><strong>厨卫小电&nbsp;></strong></a>
+<!--               榨汁机/原汁机电水壶/热水瓶微波炉电火锅养生壶电磁炉面包机空气炸锅面条机电陶炉煮蛋器电烧烤炉
+生活电器 -->
+              <a href="">破壁机电烤箱</a>
+              <a href="">电饭煲</a>
+              <a href="">电压力锅</a>
+              <a href="">电炖锅</a>
+              <a href="">豆浆机</a>
+              <a href="">料理机</a>
+              <a href="">咖啡机</a>
+              <a href="">电饼铛</a>
+              </li>
+              <li>
+              <a href=""><strong>生活电器&nbsp;></strong></a>
+              <!-- 拖把/拖地机挂烫机/熨斗电话机饮水机净水器电风扇冷风扇毛球修剪器生活电器配件 -->
+              <a href="">取暖电器</a>
+              <a href="">加湿器</a>
+              <a href="">空气净化器</a>
+              <a href="">吸尘器</a>
+              <a href="">除螨仪</a>
+              <a href="">扫地机器人</a>
+              <a href="">除湿机</a>
+              <a href="">干衣机蒸汽</a>
+              </li>
+              <li>
+              <a href=""><strong>个户健康&nbsp;></strong></a>
+              <!-- 剃/脱毛器理发器足浴盆足疗机按摩椅 -->
+              <a href="">剃须刀</a>
+              <a href="">电动牙刷</a>
+              <a href="">电吹风</a>
+              <a href="">美容器</a>
+              <a href="">洁面仪</a>
+              <a href="">按摩器</a>
+              <a href="">健康秤</a>
+              <a href="">卷/直发器</a>
+              </li>
+              <li>
+              <a href=""><strong>视听影音&nbsp;></strong></a>
+
+              <a href="">家庭影院</a>
+              <a href="">KTV音响</a>
+              <a href="">迷你音响</a>
+              <a href="">DVD</a>
+              <a href="">功放</a>
+              <a href="">回音壁</a>
+              <a href="">麦克风</a>
+              <a href=""></a>
+              </li>
+            </ul>
+      	 </div>
+      	<li class="datu_l_2"><a href="">手机</a>&nbsp;<span>/</span><a href="">运营商</a>&nbsp;<span>/</span><a href="">数码</a></li>
+          <div class="shouji">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+      	<li class="datu_l_3"><a href="">电脑</a>&nbsp;<span>/</span><a href="">办公</a></li>
+      	  <div class="diannao">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+      	  </div>
+      	<li class="datu_l_4"><a href="">家居</a>&nbsp;<span>/</span><a href="">家居</a>&nbsp;<span>/</span><a href="">家装</a>&nbsp;<span>/</span><a href="">厨具</a></li>
+      	  <div class="jiaju">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+      	  </div>
+      	<li class="datu_l_5"><a href="">男装</a>&nbsp;<span>/</span><a href="">女装</a>&nbsp;<span>/</span><a href="">童装</a>&nbsp;<span>/</span><a href="">内衣</a></li>
+      	  <div class="nanzhuang">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+      	  </div>
+      	<li class="datu_l_6"><a href="">美妆</a>&nbsp;<span>/</span><a href="">个人清洁</a>&nbsp;<span>/</span><a href="">宠物</a></li>
+      	  <div class="meizhuang">
+             <ul>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+             </ul>
+      	  </div>
+      	<li class="datu_l_7"><a href="">女鞋</a>&nbsp;<span>/</span><a href="">箱包</a>&nbsp;<span>/</span><a href="">钟表</a>&nbsp;<span>/</span><a href="">珠宝</a></li>
+      	  <div class="nvxie">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+      	  </div>
+      	<li class="datu_l_8"><a href="">男鞋</a>&nbsp;<span>/</span><a href="">运动</a>&nbsp;<span>/</span><a href="">户外</a></li>
+      	  <div class="nanxie">
+
+      	  </div>
+      	<li class="datu_l_9"><a href="">房产</a>&nbsp;<span>/</span><a href="">汽车</a>&nbsp;<span>/</span><a href="">汽车用品</a></li>
+      	  <div class="fangchan">
+ 
+      	  </div>
+      	<li class="datu_l_10"><a href="">母婴</a>&nbsp;<span>/</span><a href="">玩具乐器</a></li>
+      	  <div class="muying">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+      	  </div>
+      	<li class="datu_l_11"><a href="">食品</a>&nbsp;<span>/</span><a href="">酒类</a>&nbsp;<span>/</span><a href="">生鲜</a>&nbsp;<span>/</span><a href="">特产</a></li>
+      	  <div class="shipin">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+      	  </div>
+      	<li class="datu_l_12"><a href="">艺术</a>&nbsp;<span>/</span><a href="">礼品鲜花</a>&nbsp;<span>/</span><a href="">农资绿植</a></li>
+      	  <div class="yishu">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+      	  </div>
+      	<li class="datu_l_13"><a href="">医药保健</a>&nbsp;<span>/</span><a href="">计生情趣</a></li>
+      	  <div class="yiyaobaojian">
+
+      	  </div>
+      	<li class="datu_l_14"><a href="">图文</a>&nbsp;<span>/</span><a href="">文娱</a>&nbsp;<span>/</span><a href="">教育</a>&nbsp;<span>/</span><a href="">电子书</a></li>
+      	  <div class="tuwen">
+
+      	  </div>
+      	<li class="datu_l_15"><a href="">机票</a>&nbsp;<span>/</span><a href="">酒店</a>&nbsp;<span>/</span><a href="">旅游</a>&nbsp;<span>/</span><a href="">生活</a></li>
+      	  <div class="jipiao">
+
+      	  </div>
+      	<li class="datu_l_16"><a href="">理财</a>&nbsp;<span>/</span><a href="">众筹</a>&nbsp;<span>/</span><a href="">白条</a>&nbsp;<span>/</span><a href="">保险</a></li>
+      	  <div class="licai">
+
+      	  </div>
+      	<li class="datu_l_17"><a href="">安装</a>&nbsp;<span>/</span><a href="">维修</a>&nbsp;<span>/</span><a href="">清洗</a>&nbsp;<span>/</span><a href="">二手</a></li>
+      	  <div class="anzhuang">
+
+          </div>
+      	<li class="datu_l_18"><a href="">工业品</a></li>
+      	  <div class="gongyepin">
+
+      	  </div>
+      </ul>
+    </div>
+    <div class="datu_c">
+      <div class="datu_c_l">
+       <ul class="lunbo_tu">
+         <li><img src="images/20.jpg.webp" alt=""></li>
+         <li><img src="images/39.jpg" alt=""></li>
+         <li><img src="images/40.jpg" alt=""></li>
+         <li><img src="images/41.jpg" alt=""></li>
+         <li><img src="images/42.jpg" alt=""></li>
+         <li><img src="images/43.jpg" alt=""></li>
+         <li><img src="images/44.jpg" alt=""></li>
+         <li><img src="images/45.jpg" alt=""></li>
+       </ul>
+       <ul class="number">
+          <li class="number_1"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="zuo"><</div>
+        <div class="you">></div>
+      </div>
+      <div class="datu_c_r">
+        <ul>
+      	   <a href=""><img src="images/21.png" alt="" class="t"></a> 
+           <a href=""><img src="images/24.png" alt="" class="c"></a>
+           <a href=""><img src="images/25.png" alt="" class="b"></a>
+        </ul>
+        <ul class="datu_c_r_2">
+           <a href=""><img src="images/24.png" alt="" class="t"></a> 
+           <a href=""><img src="images/21.png" alt="" class="c"></a>
+           <a href=""><img src="images/25.png" alt="" class="b"></a>
+        </ul>
+        <div class="datu_c_r_zuobut"><</div>
+        <div class="datu_c_r_youbut">></div>
+      </div>
+    </div>
+    <div class="datu_r">
+      <div class="datu_r_t">
+        <img src="images/26.gif" alt="" class="datu_r_t_gou">
+        <div class="datu_r_t_wenzi">
+          <p><a href="" class="hi">Hi~欢迎逛京东</a></p>
+          <p><a href="" class="dl">登录</a>&nbsp;|
+          <a href="" class="zc">注册</a>
+          </p>
+        </div>
+        <ul>
+        	<li class="xinren"><a href="">新人福利</a></li>
+        	<li class="huiyuan"><a href="">PLUS会员</a></li>
+        </ul>
+      </div>
+      <div class="datu_r_c">
+        <div class="datu_r_c_t">
+           <ul>
+        	<li class="kuaibao"><h5>京东快报</h5></li>
+        	<li class="gengduo"><a href="">更多&nbsp;></a></li>
+          </ul>
+        </div>
+      <div class="datu_r_c_b">
+           <ul>
+           	<li><a href="" class="re">推荐</a><a href="" class="re_hou">iPhone SE2真的来了</a>...</li>
+           	<li><a href="" class="re">热门</a><a href="" class="re_hou">iPhone 11再见! 苹  </a>...</li>
+           	<li><a href="" class="re">热评</a><a href="" class="re_hou">5G手机已经来了,  </a>...</li>
+           	<li><a href="" class="re">最新</a><a href="" class="re_hou">华为P30沦为退场假</a>...</li>
+           </ul>
+        </div>
+      </div>
+      <div class="datu_r_b">
+        <ul>
+        	<li class="datu_r_b_1">
+          <img src="images/27.gif" alt=""><br><a href="">话费</a>
+          <div class="show_datu_r_b_1">
+            
+          </div>
+          </li>
+        	<li class="datu_r_b_2"><img src="images/28.gif" alt=""><br><a href="">机票</a></li>
+        	<li class="datu_r_b_3"><img src="images/29.gif" alt=""><br><a href="">酒店</a></li>
+        	<li class="datu_r_b_4"><img src="images/30.gif" alt=""><br><a href="">游戏</a></li>
+        	<li class="datu_r_b_5"><img src="images/31.gif" alt=""><br><a href="">加油卡</a></li>
+        	<li class="datu_r_b_6"><img src="images/32.gif" alt=""><br><a href="">火车票</a></li>
+        	<li class="datu_r_b_7"><img src="images/33.gif" alt=""><br><a href="">众筹</a></li>
+        	<li class="datu_r_b_8"><img src="images/34.gif" alt=""><br><a href="">理财</a></li>
+        	<li class="datu_r_b_9"><img src="images/35.gif" alt=""><br><a href="">白条</a></li>
+        	<li class="datu_r_b_10"><img src="images/36.gif" alt=""><br><a href="">电影票</a></li>
+        	<li class="datu_r_b_11"><img src="images/37.gif" alt=""><br><a href="">企业购</a></li>
+        	<li class="datu_r_b_12"><img src="images/38.gif" alt=""><br><a href="">礼品卡</a></li>
+        </ul>
+<!--        <ul>
+       	<li><a href="">话费</a></li>
+       	<li><a href="">机票</a></li>
+       	<li><a href="">酒店</a></li>
+       </ul> -->
+      </div>
+    </div>
+    <div class="datu_b">
+      <div class="datu_b_l">
+        <h2>京东秒杀</h2>
+        <img src="images/54.gif" alt="">
+        <h4>10:00点场 倒计时</h4>
+       <!--  <h1>网页上的倒计时</h1> -->
+        <div class="time-item">
+<!--           <span id="day_show">0天</span> -->
+          <strong id="hour_show">00</strong>
+          <strong id="minute_show">00</strong>
+          <strong id="second_show">00</strong>
+        </div>
+      </div>
+      <div class="datu_b_c">
+      <div class="allpic">
+       <ul>
+       	 <li><img src="images/48.jpg" alt=""><br><a href="">【御寒神器】富贵鸟冬季新...</a>
+       	  <div class="datu_b_c_b1">
+          <div class="datu_b_c_b1_l">
+
+          </div>
+          <div class="datu_b_c_b1_r">
+
+          </div>
+         </div>
+         </li>
+       	<li>
+       	<img src="images/49.jpg" alt=""><br><a href="">会说话的汤姆猫 儿童加绒版...</a>
+       	<div class="datu_b_c_b2">
+         <div class="datu_b_c_b2_l">
+
+         </div>
+         <div class="datu_b_c_b2_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/50.jpg" alt=""><br><a href="">【男女款35-44】 【爆款推...</a>
+       	<div class="datu_b_c_b3">
+         <div class="datu_b_c_b3_l">
+
+         </div>
+         <div class="datu_b_c_b3_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/51.jpg" alt=""><br><a href="">乾昌珠宝 黄金貔貅手链DIY...</a>
+        <div class="datu_b_c_b4">
+         <div class="datu_b_c_b4_l">
+
+         </div>
+         <div class="datu_b_c_b4_r">
+
+         </div>
+        </div>
+       	</li>
+       	<li><img src="images/48.jpg" alt=""><br><a href="">【御寒神器】富贵鸟冬季新...</a>
+       	  <div class="datu_b_c_b1">
+          <div class="datu_b_c_b1_l">
+
+          </div>
+          <div class="datu_b_c_b1_r">
+
+          </div>
+         </div>
+         </li>
+       	<li>
+       	<img src="images/49.jpg" alt=""><br><a href="">会说话的汤姆猫 儿童加绒版...</a>
+       	<div class="datu_b_c_b2">
+         <div class="datu_b_c_b2_l">
+
+         </div>
+         <div class="datu_b_c_b2_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/50.jpg" alt=""><br><a href="">【男女款35-44】 【爆款推...</a>
+       	<div class="datu_b_c_b3">
+         <div class="datu_b_c_b3_l">
+
+         </div>
+         <div class="datu_b_c_b3_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/51.jpg" alt=""><br><a href="">乾昌珠宝 黄金貔貅手链DIY...</a>
+        <div class="datu_b_c_b4">
+         <div class="datu_b_c_b4_l">
+
+         </div>
+         <div class="datu_b_c_b4_r">
+
+         </div>
+        </div>
+       	</li>
+       	<li><img src="images/48.jpg" alt=""><br><a href="">【御寒神器】富贵鸟冬季新...</a>
+       	  <div class="datu_b_c_b1">
+          <div class="datu_b_c_b1_l">
+
+          </div>
+          <div class="datu_b_c_b1_r">
+
+          </div>
+         </div>
+         </li>
+       	<li>
+       	<img src="images/49.jpg" alt=""><br><a href="">会说话的汤姆猫 儿童加绒版...</a>
+       	<div class="datu_b_c_b2">
+         <div class="datu_b_c_b2_l">
+
+         </div>
+         <div class="datu_b_c_b2_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/50.jpg" alt=""><br><a href="">【男女款35-44】 【爆款推...</a>
+       	<div class="datu_b_c_b3">
+         <div class="datu_b_c_b3_l">
+
+         </div>
+         <div class="datu_b_c_b3_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/51.jpg" alt=""><br><a href="">乾昌珠宝 黄金貔貅手链DIY...</a>
+        <div class="datu_b_c_b4">
+         <div class="datu_b_c_b4_l">
+
+         </div>
+         <div class="datu_b_c_b4_r">
+
+         </div>
+        </div>
+       	</li>
+       	<li><img src="images/48.jpg" alt=""><br><a href="">【御寒神器】富贵鸟冬季新...</a>
+       	  <div class="datu_b_c_b1">
+          <div class="datu_b_c_b1_l">
+
+          </div>
+          <div class="datu_b_c_b1_r">
+
+          </div>
+         </div>
+         </li>
+       	<li>
+       	<img src="images/49.jpg" alt=""><br><a href="">会说话的汤姆猫 儿童加绒版...</a>
+       	<div class="datu_b_c_b2">
+         <div class="datu_b_c_b2_l">
+
+         </div>
+         <div class="datu_b_c_b2_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/50.jpg" alt=""><br><a href="">【男女款35-44】 【爆款推...</a>
+       	<div class="datu_b_c_b3">
+         <div class="datu_b_c_b3_l">
+
+         </div>
+         <div class="datu_b_c_b3_r">
+
+         </div>
+       </div>
+       	</li>
+       	<li>
+       	<img src="images/51.jpg" alt=""><br><a href="">乾昌珠宝 黄金貔貅手链DIY...</a>
+        <div class="datu_b_c_b4">
+         <div class="datu_b_c_b4_l">
+
+         </div>
+         <div class="datu_b_c_b4_r">
+
+         </div>
+        </div>
+       	</li>
+       </ul>
+       </div>
+       <div class="datu_b_c_leftbut"><</div>
+       <div class="datu_b_c_rightbut">></div>
+      </div>
+      <div class="datu_b_r">
+        <div class="datu_b_r_nei">
+        <ul class="tuli">
+        	<li class="huashuodiannao">
+        	  <img src="images/52.jpg" alt="">
+              <br>
+              <a href="" class="huashuo">华硕台机闪购狂欢</a>
+              <br>
+              <a href="" class="quanchang"><strong>全场最高直降7111元</strong></a>
+              <div class="dapaishangou">
+              <a href="">大牌闪购></a>
+              </div>  
+            </li>
+        	<li class="msi">
+        	<img src="images/53.jpg" alt="">
+            <br>
+            <a href="" class="huashuo">华硕台机闪购狂欢</a>
+            <br>
+            <a href="" class="quanchang"><strong>全场最高直降7111元</strong></a>
+            <div class="dapaishangou">
+            <a href="">大牌闪购></a>
+        	</li>
+        </ul>
+      
+          <ul class="zidongyuan">
+        	<li class="number_1"></li>
+        	<li></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <div class="jieshao">
+    <div class="zuihou">
+     <ul>
+   	  <li class="duo"><img src="images/55.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+   	  <li class="kuai"><img src="images/56.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+   	  <li class="hao"><img src="images/57.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+   	  <li class="sheng"><img src="images/58.gif" alt=""><strong>品类齐全，轻松购物</strong></li>
+     </ul>
+    </div>
+    <div class="zhinan">
+      <ul>
+  	    <li>
+  	    <h5>购物指南</h5>
+         <a href="">购物流程</a><br>
+         <a href="">会员介绍</a><br>
+         <a href="">生活旅游</a><br>
+         <a href="">常见问题</a><br>
+         <a href="">大家电</a><br>
+         <a href="">联系客服</a>
+  	    </li>
+  	    <li>
+  	    <h5>配送方式</h5>
+  	    <a href="">上门自提</a><br>
+  	    <a href="">211限时达</a><br>
+  	    <a href="">配送服务查询</a><br>
+  	    <a href="">配送费收费标准</a><br>
+  	    <a href="">海外配送</a>
+  	    </li>
+  	    <li>
+  	    <h5>支付方式</h5>
+  	    <a href="">货到付款</a><br>
+  	    <a href="">在线支付</a><br>
+  	    <a href="">分期付款</a><br>
+  	    <a href="">公司转账</a>
+  	    </li>
+  	    <li>
+  	    <h5>售后服务</h5>
+  	    <a href="">售后政策</a><br>
+  	    <a href="">价格保护</a><br>
+  	    <a href="">退款说明</a><br>
+  	    <a href="">返修/退换货</a><br>
+  	    <a href="">取消订单</a>
+  	    </li>
+  	    <li>
+  	    <h5>特殊服务</h5>
+  	    <a href="">夺宝岛</a><br>
+  	    <a href="">DIY装机</a><br>
+  	    <a href="">延保服务</a><br>
+  	    <a href="">京东E卡</a><br>
+  	    <a href="">京东通信</a><br>
+  	    <a href="">京鱼座智能</a>
+  	    </li>
+      </ul>
+      <div class="ziying">
+        <h5>京东自营覆盖区县</h5>
+        <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+        <a href="">查看详情></a>
+      </div>
+    </div>
+    <div class="jieshao_nav">
+      <ul>
+      	<li><a href="">关于我们</a></li>
+      	<li><a href="">联系我们</a></li>
+      	<li><a href="">联系客服</a></li>
+      	<li><a href="">合作招商</a></li>
+      	<li><a href="">商家帮助</a></li>
+      	<li><a href="">营销中心</a></li>
+      	<li><a href="">手机京东</a></li>
+      	<li><a href="">友情链接</a></li>
+      	<li><a href="">销售联盟</a></li>
+      	<li><a href="">京东社区</a></li>
+      	<li><a href="">风险监测</a></li>
+      	<li><a href="">隐私政策</a></li>
+      	<li><a href="">京东公益</a></li>
+      	<li><a href="">English Site</a></li>
+      	<li><a href="">Media & IR</a></li>
+      </ul>
+      <br>
+      <ul class="jinggongan">
+      	<li><a href="">京公网安备 11000002000088号</a></li>
+      	<li><a href="">京ICP证070359号</a></li>
+      	<li><a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a></li>
+      	<li><a href="">新出发京零 字第大120007号</a></li>
+      </ul>
+      <br>
+      <ul class="hulianwang">
+      	<li><a href="">互联网出版许可证编号新出网证(京)字150号</a></li>
+      	<li><a href="">出版物经营许可证</a></li>
+      	<li><a href="">网络文化经营许可证京网文[2014]2148-348号</a></li>
+      	<li><a href="">违法和不良信息举报电话：4006561155</a></li>
+      </ul>
+      <br>
+      <ul class="xiaofeizhe">
+      	<li><span>Copyright © 2004 -</span></li>
+      	<li><span>消费者维权热线：4006067733</span>&nbsp;&nbsp;<a href="">经营证照</a></li>
+      	<li><a href="">(京)网械平台备字(2018)第00003号</a></li>
+      	<li><a href="">营业执照</a></li>
+      </ul>
+      <br>
+      <ul class="guojia">
+      	<li><img src="images/08.gif" alt="">&nbsp;&nbsp;<a href="">Global Site</a></li>
+      	<li><img src="images/09.gif" alt="">&nbsp;&nbsp;<a href="">Сайт России</a></li>
+      	<li><img src="images/07.gif" alt="">&nbsp;&nbsp;<a href="">Situs Indonesia</a></li>
+      	<li><img src="images/10.gif" alt="">&nbsp;&nbsp;<a href="">Sitio de España</a></li>
+      	<li><img src="images/11.gif" alt="">&nbsp;&nbsp;<a href="">เว็บไซต์ประเทศไทย</a></li>
+      </ul>
+      <br>
+      <ul class="jingdongqixia">
+      	<li><span>京东旗下网站：</span><a href="">京东钱包</a></li>
+      	<li><a href="">京东云</a></li>
+      </ul>
+      <br>
+      <ul class="kexinwangzhan">
+      	<li><img src="images/59.gif" alt="" class="img1"><p>可信网站<br>信用评估</p></li>
+      	<li><img src="images/60.gif" alt="" class="img2"><p>网络警察<br>提醒你</p></li>
+      	<li><img src="images/61.gif" alt="" class="img4"><p class="chengxin">诚信网站</p></li>
+      	<li><img src="images/62.gif" alt="" class="img5"><p>中国互联网<br>举报中心</p></li>
+      	<li><img src="images/63.gif" alt="" class="img6"><p>网络举报<br>APP下载</p></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

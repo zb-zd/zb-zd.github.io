@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<style>
+  .main p{
+    text-align: center;
+  }
+  .item>div>img{
+    width: 100%;
+  }
+  .nav-ios{
+    width: 100%;
+  }
+  .nav-ios li{
+    width: 20%;
+    float: left;
+  }
+  .nav-ios li a{
+    padding: 0;
+    text-align: center;
+  }
+  .nav-ios li img{
+    width: 100%;
+  }
+</style>
+<body>
+  <!-- 
+    1.选项卡菜单组件 .nav-tabs  导航链接中需要设置一个data-toggle=“tab”
+    2.面板内容统一放在.tab-content容器中。而且每个面板内容.tab-pane。需要设置一个id值
+   -->
+   <!-- <ul class="nav nav-tabs">
+     <li class="active"><a href="#one" data-toggle="tab">list1</a></li>
+     <li><a href="#two" data-toggle="tab">list2</a></li>
+     <li><a href="#three" data-toggle="tab">list3</a></li>
+   </ul>
+   <div class="tab-content">
+     <div class="tab-pane active" id="one">1</div>
+     <div class="tab-pane" id="two">2</div>
+     <div class="tab-pane" id="three">3</div>
+   </div> -->
+   <div class="nav-ios">
+    <ul class="nav">
+      <li><a href="#one" data-toggle="tab"><img src="./img/zhuo.jpg" alt=""><p>桌</p></a></li>
+      <li><a href="#two" data-toggle="tab"><img src="./img/zhuo.jpg" alt=""><p>桌</p></a></li>
+      <li><a href="#three" data-toggle="tab"><img src="./img/zhuo.jpg" alt=""><p>桌</p></a></li>
+      <li><a href="#flue" data-toggle="tab"><img src="./img/zhuo.jpg" alt=""><p>桌</p></a></li>
+      <li><a href="#fra" data-toggle="tab"><img src="./img/zhuo.jpg" alt=""><p>桌</p></a></li>
+    </ul>
+   </div>
+   <div class="container main tab-content">
+     <div class="row item tab-pane active" id="one">
+       <div class="col-md-2 hidden-xs">
+         <img src="./img/baijian.png" alt="">
+         <p>1摆件</p>
+       </div>
+       <div class="col-md-10">
+         <div class="col-md-2 col-xs-6">
+           <img src="./img/mj1.jpg" alt="">
+           <p>1中式小玩偶</p>
+           <p>$1200</p>
+         </div>
+         <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+       </div>
+     </div>
+     <div class="row item tab-pane" id="two">
+      <div class="col-md-2 hidden-xs">
+        <img src="./img/baijian.png" alt="">
+        <p>摆件</p>
+      </div>
+      <div class="col-md-10">
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>2中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+      </div>
+    </div>
+    <div class="row item tab-pane" id="three">
+      <div class="col-md-2 hidden-xs">
+        <img src="./img/baijian.png" alt="">
+        <p>摆件</p>
+      </div>
+      <div class="col-md-10">
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+      </div>
+    </div>
+    <div class="row item tab-pane" id="flue">
+      <div class="col-md-2 hidden-xs">
+        <img src="./img/baijian.png" alt="">
+        <p>摆件</p>
+      </div>
+      <div class="col-md-10">
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+      </div>
+    </div>
+    <div class="row item tab-pane" id="fra">
+      <div class="col-md-2 hidden-xs">
+        <img src="./img/baijian.png" alt="">
+        <p>摆件</p>
+      </div>
+      <div class="col-md-10">
+        <div class="col-md-2 col-xs-6">
+          <img src="./img/mj1.jpg" alt="">
+          <p>中式小玩偶</p>
+          <p>$1200</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+       <div class="col-md-2 col-xs-6">
+         <img src="./img/mj1.jpg" alt="">
+         <p>中式小玩偶</p>
+         <p>$1200</p>
+       </div>
+      </div>
+    </div>
+   </div>
+</body>
+</html>

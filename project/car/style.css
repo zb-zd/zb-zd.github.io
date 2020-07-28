@@ -1,0 +1,180 @@
+.byton{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner img{
+  position: absolute;
+  /* min-width: 920px; */
+  min-width: 1720px;
+  width: 100%;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.navbar{
+  background: rgba(0,0,0,0.1);
+}
+.navbar-header{
+  padding: 22px 0;
+}
+.navbar-header .logo{
+  width: 180px;
+  height: 46px;
+  display: block;
+  background: url(../img/white.logo.png) no-repeat;
+}
+.navbar-collapse{
+  margin-left: 10% !important;
+  float: left;
+}
+.navbar-nav{
+}
+.navbar-nav>li{
+  padding: 30px 10px;
+}
+.navbar-nav>li>a{
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+.navbar-nav>li>a:hover{
+  background: none;
+}
+.tubiao{
+  float: right;
+  margin-top: 26px;
+}
+.tubiao a{
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.tubiao a.reserve{
+  padding: 5px 10px;
+  border: 1px solid #fff;
+}
+.tubiao .bytonicon{
+  font-size: 26px;
+  margin: 0 5px;
+}
+/* 内容 */
+.content{
+  width: 100%;
+  overflow: hidden; /* 解决子元素悬浮后父盒子高度无法自适应 */
+}
+.content>.item{
+  position: relative;
+  width: 48.5%;
+  float: left;
+  margin-top: 1%;
+}
+.content>.item-left{
+  margin-left: 1%;
+  margin-right: 0.5%;
+}
+.content>.item-right{
+  margin-right: 1%;
+  margin-left: 0.5%;
+}
+.content>.item>a,.content>.item-big>a{
+  display: block;
+  color: #fff;
+}
+.content>.item1>a{
+  color: #75787d;
+}
+.content>.item>a>.word{
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+}
+.content>.item>a>.word>h1{
+  text-align: center;
+  font-weight: bold;
+}
+.content>.item>a>.word>h1,.content>.item>a>.word>h4 ,.content>.item>a>.word>p{
+  letter-spacing: 1px;
+}
+.content>.item>a>.word>p>span{
+  margin-top: 3px;
+  padding: 3px;
+}
+.content>.item-big{
+  width: 98% !important;
+  margin-left: 1%; 
+  margin-right: 1%; 
+}
+.item-big>a>img{
+  width: 100%;
+}
+.foot-left{
+  background-color: #75787d;
+}
+@media(max-width:1024px){
+  .navbar-collapse{
+    margin-left: 10px !important;
+  }
+}
+@media(max-width:992px){
+  /* .tubiao{
+    display: none;
+  } */
+}
+@media(max-width:767px){
+  .byton{
+    /* height: 480px; */
+  }
+  .banner img{
+    top: -50px;
+  }
+  .navbar{
+    background: #fff !important;
+  }
+  .navbar-nav>li>a{
+    color: #606060;
+  }
+  .navbar-header{
+    padding: 0;
+    padding-top: 13px;
+  }
+  .navbar-toggle{
+    padding: 0;
+    margin-left: 15px;
+    float: left;
+  }
+  .navbar-toggle .icon-bar{
+    background: #7A7876;
+  }
+  .nav>li>a , .navbar-nav>li>.reserve{
+    display: inline !important;
+  }
+  .navbar-collapse{
+    height: 100vh;
+    width: 100vw;
+  }
+  .tubiao{
+    position: absolute;
+    right: 15px;
+    margin-top: -40px;
+  }
+  .tubiao a{
+    color: #7A7876 !important;
+  }
+  /* 内容 */
+  .content>.item{
+    width: 96%;
+    margin: 2%;
+  }
+  .content>.item>a>.word{
+    top: 20px !important;
+  }
+  .content>.item>a>.word>h1{
+    font-size: 24px !important;
+  }
+  .content>.item>a>.word>h4{
+    font-size: 14px !important;
+  }
+}

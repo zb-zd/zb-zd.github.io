@@ -37,18 +37,12 @@
   .navbar .navbar-header button span{
     background-color: aliceblue;
   }
-  #works .works-list .item:hover{
-    padding: 10px;
-  }
-  #works .works-list .item .imgbox img{
-    filter: brightness(0.3);
-  }
-  #works .works-list .item .works-cover{
-    display: block;
-  }
-  #works .works-list .item .works-cover p{
-    font-size: 12px;
-  }
+  .mask-list>span{
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+}
+  
 }
 @media(max-width:400px){
     #work .mask,
