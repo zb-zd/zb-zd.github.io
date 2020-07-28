@@ -1,0 +1,59 @@
+@media(max-width:768px) {
+
+  /* banner */
+  .banner .mask {
+    padding-top: 50%;
+  }
+
+
+  #work .work-list .item{
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  #work .work-list .item {
+    height: 200px;
+  }
+
+  #skill,
+  #skill .mask {
+    height: 700px;
+  }
+
+  #call .mask .container .call-ios {
+    padding-top: 100px;
+  }
+
+  #dine {
+    background-color: #434c64;
+    height: auto;
+  }
+  #dine ul{
+    float: none;
+  }
+  #dine ul li{
+    text-align: center;
+  }
+  .navbar .navbar-header button span{
+    background-color: aliceblue;
+  }
+  #works .works-list .item:hover{
+    padding: 10px;
+  }
+  #works .works-list .item .imgbox img{
+    filter: brightness(0.3);
+  }
+  #works .works-list .item .works-cover{
+    display: block;
+  }
+  #works .works-list .item .works-cover p{
+    font-size: 12px;
+  }
+}
+@media(max-width:400px){
+    #work .mask,
+  #skill .mask,
+  #call .mask {
+    padding-top: 30px;
+  }
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+    letter-spacing: 1px;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .item {
+    width: 96%;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 5px auto;
+  }
+
+  .top {
+    height: 30px;
+  }
+
+  .top,
+  .bottom {
+    width: 96%;
+    margin: 10px 10px 0 10px;
+  }
+
+  .shop {
+    width: 200px;
+    float: left;
+  }
+
+  .del {
+    width: 20px;
+    float: right;
+  }
+
+  .bottom {
+    height: 90px;
+  }
+
+  .bottom .btn,
+  .bottom .img,
+  .bottom .content {
+    float: left;
+  }
+
+  .bottom .btn {
+    width: 5%;
+    height: 90px;
+    line-height: 80px;
+  }
+
+  .bottom .img {
+    width: 90px;
+    height: 90px;
+    background-color: #ccc;
+  }
+
+  .bottom .content {
+    width: 68%;
+    height: 90px;
+  }
+
+  .content .ding {
+    height: 50px;
+  }
+
+  .content .ding,
+  .content .di {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .content .di {
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .content .di .price {
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+  }
+
+  .content .di .add {
+    width: 35%;
+    height: 27px;
+    float: right;
+    padding-top: 3px;
+  }
+
+  .content .di .add button {
+    padding: 0 5px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ccc;
+  }
+
+  .footer .change {
+    width: 30%;
+    margin-left: 10px;
+    line-height: 60px;
+    float: left;
+  }
+
+  .footer .addPrice {
+    float: right;
+    margin-right: 10px;
+    line-height: 60px;
+  }
+</style>
+
+<body>
+  <div id="app">
+    <my-shop></my-shop>
+  </div>
+</body>
+<template id="shopTitle">
+  <div class="header">
+    <h4>购物车</h4>
+  </div>
+</template>
+<template id="shopList">
+  <div class="list">
+    <div class="item" v-for="(item,index) in list" :key="item.id">
+      <div class="top">
+        <div class="shop">
+          <h4>{{item.shop}}</h4>
+        </div>
+        <div class="del">
+          <a href="" @click.prevent="detach(index)">×</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="btn">
+          <input type="radio" class="radio" :checked="item.check" @click="item.check=!item.check">
+        </div>
+        <div class="img"></div>
+        <div class="content">
+          <div class="ding">
+            <p>{{item.name}}</p>
+          </div>
+          <div class="di">
+            <div class="price">
+              {{item.price | finalPrice}}
+            </div>
+            <div class="add">
+              <button @click="decrease(index)" :disabled="item.number == 1">-</button>
+              <span> {{item.number}} </span>
+              <button @click="increase(index)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<template id="shopTotal">
+  <div class="footer">
+    <div class="change">
+      <input type="checkbox" id="change" @click="change"><label for="change">全选</label>
+    </div>
+    <div class="addPrice">
+      <h3>总价：{{addPrice | finalPrice}}</h3>
+    </div>
+  </div>
+</template>
+<template id="myShop">
+  <div>
+    <shop-title></shop-title>
+    <shop-list :list="list" @shop-del="delShop($event)" @shop-decrease="decreaseShop($event)" @shop-increase="increaseShop($event)"></shop-list>
+    <shop-total :add-price="addPrice" @shop-all="changeShop($event)"></shop-total>
+  </div>
+</template>
+
+</html>
+<script src="./js/vue.js"></script>
+<script>
+  var shopTitle = {
+    template: '#shopTitle'
+  }
+  var shopList = {
+    template: '#shopList',
+    props:['list'],
+    data() {
+      return {
+       
+      }
+    },
+     methods: {
+       detach(index){
+        this.$emit('shop-del',index);
+       },
+       decrease(index){
+         this.$emit('shop-decrease',index);
+       },
+       increase(index){
+        this.$emit('shop-increase',index);
+       }
+    },
+    filters: {
+      finalPrice(price) {
+        return '$' + price.toFixed(2);
+      }
+    }
+  }
+  var shopTotal = {
+    template: '#shopTotal',
+    props:['addPrice'],
+    data(){
+      return{
+        // addPrice:0,
+      }
+    },
+    methods:{
+      change(){
+        let all=document.getElementById('change');
+        let check=false;
+        if(all.checked==true){
+          check=true;
+        }else{
+          check=false;
+        }
+        this.$emit('shop-all',check);
+      }
+    },
+   
+    filters: {
+      finalPrice(addPrice) {
+        return '$' + addPrice.toFixed(2);
+      }
+    }
+  }
+  
+  Vue.component('my-shop', {
+    template: '#myShop',
+    data() {
+      return {
+        // addPrice:100,
+        list: [{
+            id: 1,
+            shop: '小左的店铺',
+            name: '海贼王手办',
+            price: 1000,
+            number: 1,
+            check: true
+          },
+          {
+            id: 2,
+            shop: '小李的店铺',
+            name: '火影忍者手办',
+            price: 1500,
+            number: 3,
+            check: false
+          },
+          {
+            id: 3,
+            shop: '小董的店铺',
+            name: '进击的巨人手办',
+            price: 1200,
+            number: 1,
+            check: false
+          },
+        ]
+      }
+    },
+    computed:{
+      addPrice(){
+        let addPrice = 0;
+          this.list.forEach((item)=>{
+            if(item.check==true){
+              addPrice += item.price * item.number;
+            }
+          })
+          return addPrice;
+        }
+    },
+    components: {
+      'shop-title': shopTitle,
+      'shop-list': shopList,
+      'shop-total': shopTotal,
+    },
+    methods:{
+     delShop(index){
+      this.list.splice(index, 1);
+     },
+     decreaseShop(index){
+       this.list[index].number --;
+     },
+     increaseShop(index){
+       this.list[index].number ++;
+     },
+     changeShop(check){
+       this.list.forEach((item)=>{
+         item.check = check;
+       })
+     }
+    },
+    filters: {
+      finalPrice(price) {
+        return '$' + price.toFixed(2);
+      }
+    }
+  })
+
+  const app = new Vue({
+    el: '#app',
+   
+  })
+</script>
